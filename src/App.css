@@ -1,0 +1,116 @@
+@keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .text-slide-right {
+    animation: slideInRight 0.8s ease-in-out forwards;
+  }
+  
+  .text-slide-left {
+    animation: slideInLeft 0.8s ease-in-out forwards;
+  }
+
+
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 2.1s ease-in-out forwards;
+  }
+  
+
+
+  @keyframes slideInFromRight {
+    from {
+      transform: translateX(100%); /* Start off-screen from the right */
+      opacity: 0; /* Invisible */
+    }
+    to {
+      transform: translateX(0); /* Move to the original position */
+      opacity: 1; /* Fully visible */
+    }
+  }
+  
+  /* Initial hidden state for elements */
+  .hidden-on-start {
+    opacity: 0;
+    transform: translateX(100%); /* Initially off-screen */
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  
+  /* Slide-in from the right animation */
+  .move-to-left-on-scroll {
+    opacity: 1;
+    transform: translateX(0); /* Move into view */
+    animation: slideInFromRight 1s ease forwards;
+  };
+
+  
+  /* Keyframes for fadeIn */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Keyframes for slideInUp */
+@keyframes slideInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation classes */
+.fadeIn {
+  animation: fadeIn 1.5s ease-out forwards;
+}
+
+.slideInUp {
+  animation: slideInUp 1s ease-out forwards;
+}
+
+.fadeIn-delay {
+  animation: fadeIn 1.5s ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+.fadeIn-delay-long {
+  animation: fadeIn 1.5s ease-out forwards;
+  animation-delay: 0.4s;
+}
+
+  
+  
