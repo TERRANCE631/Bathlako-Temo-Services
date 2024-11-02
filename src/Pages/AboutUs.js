@@ -86,7 +86,6 @@ export const AboutUs = ({title}) => {
 
                         <div className="flex shadow-lg justify-evenly items-center">
                         <p className="px-4 py-5 text-left rtl:text-right text-gray-700 font-normal dark:text-gray-400 dark:bg-transparent text-slide-left" >
-                            <h5 className="text-center text-gray-700 dark:text-gray-300 pb-2 text-3xl font-bold "></h5>
                                 "Batlhako is proud to produce some of the highest quality citrus fruits 
                                 in the North West Province, standing out as the first black-owned farm in 
                                 the province to achieve export success. 
@@ -149,7 +148,7 @@ export const AboutUs = ({title}) => {
                     <div className="grid grid-cols-2 sm:grid-cols-5 md:grid-cols-4 lg:grid-cols-6 gap-8 ">
                         {students.map((student) => (
                             <div className="w-full h-48 sm:h-52 lg:h-30 transform hover:scale-105 transition-transform duration-300">
-                                <img decoding="async" src={student.img} alt="Gallery Image 1" className="w-full h-full object-cover" />
+                                <img decoding="async" src={student.img} alt="Gallery" className="w-full h-full object-cover" />
                             </div>
                         ))}
                     </div>
@@ -175,8 +174,7 @@ export const AboutUs = ({title}) => {
                     <div class="flex flex-wrap -m-4">
                         <div class="p-4 sm:w-1/2 lg:w-1/3">
                             <div class="h-full border-2 border-gray-200 border-opacity-60 shadow-lg rounded-lg overflow-hidden">
-                                <img class="lg:h-72 md:h-48 w-full object-cover object-center"
-                                    src={Owner_no_2} alt="team"></img>
+                                <img class="lg:h-72 md:h-48 w-full object-cover object-center"src={Owner_no_2} alt="team of the farm" /> 
                                 <div class="p-6 text-gray-700 font-normal dark:text-gray-200">
                                 <h1 className="text-gray-800 text-3xl dark:text-gray-300 text-center text-slide-left">Farm Manager</h1>
                                     <p class="leading-relaxed">
@@ -195,7 +193,7 @@ export const AboutUs = ({title}) => {
                         <div class="p-4 sm:w-1/2 lg:w-1/3">
                             <div class="h-full border-2 border-gray-200 shadow-lg border-opacity-60 rounded-lg overflow-hidden">
                                 <img decoding="async" class="lg:h-72 md:h-48 w-full object-cover object-center"
-                                    src={Owner} alt="team"></img>
+                                    src={Owner} alt="team" />
                                 <div class="p-6 text-gray-700 font-normal dark:text-gray-200">
                                 <h1 className="text-gray-800 text-3xl dark:text-gray-300 text-center text-slide-left">CEO & Farm Manager</h1>
                                     <p class="leading-relaxed">
@@ -214,7 +212,7 @@ export const AboutUs = ({title}) => {
                         <div class="p-4 sm:w-1/2 lg:w-1/3">
                             <div class="h-full border-2 border-gray-200 shadow-lg border-opacity-60 rounded-lg overflow-hidden">
                                 <img decoding="async" class="lg:h-72 md:h-48 w-full object-cover object-center"
-                                    src={Admin} alt="team"></img>
+                                    src={Admin} alt="team" />
                                 <div class="p-6 text-gray-700 font-normal dark:text-gray-200">
                                 <h1 className="text-gray-800 text-3xl dark:text-gray-300 text-center text-slide-left">Administration and quality control</h1>
                                     <p class="leading-relaxed">
@@ -261,24 +259,24 @@ export const AboutUs = ({title}) => {
             </div>
 
             <div className="flex border-t-4 mt-10 pt-4 justify-evenly flex-wrap items-center gap-4">
-                <div className="https://stargrow.co.za/" target="_blank" rel="noreferrer">
-                    <a href="">
-                        <img decoding="async" className="w-[150px] sm:w-[200px] md:w-[200px] lg:w-[200px] xl:w-[230px] object-contain" src={starGrow} alt="" />
+                <div className="" target="_blank" rel="noreferrer">
+                    <a href="https://stargrow.co.za/">
+                        <img decoding="async" className="w-[150px] sm:w-[200px] md:w-[200px] lg:w-[200px] xl:w-[230px] object-contain" src={starGrow} alt="Collaboration" />
                     </a>
                 </div>
                 <div>
                     <a href="https://www.ffesa.co.za/" target="_blank" rel="noreferrer">
-                        <img decoding="async" className="w-[150px] sm:w-[200px] md:w-[200px] lg:w-[200px] xl:w-[230px] object-contain" src={ffe} alt="" />
+                        <img decoding="async" className="w-[150px] sm:w-[200px] md:w-[200px] lg:w-[200px] xl:w-[230px] object-contain" src={ffe} alt="Collaboration" />
                     </a>
                 </div>
                 <div>
                     <a href="https://www.solidaridadnetwork.org/story/african-cooperative-thrives-as-a-citrus-producer/?fbclid=IwY2xjawFnshpleHRuA2FlbQIxMQABHTInLpbIOXEekHnJgK9CzBQioVYp1ig_jMrcodUi6AVtiZy1SxMer2zbkw_aem_d2iBD9B4MZuoXMMb6K_tLw" target="_blank" rel="noreferrer">
-                        <img decoding="async" className="w-[150px] sm:w-[200px] md:w-[200px] lg:w-[200px] xl:w-[230px] object-contain" src={Solidaridad} alt="" />
+                        <img decoding="async" className="w-[150px] sm:w-[200px] md:w-[200px] lg:w-[200px] xl:w-[230px] object-contain" src={Solidaridad} alt="Collaboration" />
                     </a>
                 </div>
                 <div>
                     <a href="https://magaliescitrus.co.za/" target="_blank" rel="noreferrer">
-                        <img decoding="async" className="w-[150px] sm:w-[200px] md:w-[200px] lg:w-[200px] xl:w-[230px] object-contain" src={Magalies} alt="" />
+                        <img decoding="async" className="w-[150px] sm:w-[200px] md:w-[200px] lg:w-[200px] xl:w-[230px] object-contain" src={Magalies} alt="Collaboration" />
                     </a>
                 </div>
             </div>

@@ -27,7 +27,7 @@ export const Header = () => {
         <div className="flex flex-wrap justify-between items-center mx-auto">
           <Link to="/" className="flex items-center">
               <img src={Logo} className="mr-1 h-10 sm:h-14" alt="BTS Logo" />
-              <span className="self-center text-orange-500 text-xl font-semibold rounded-md dark:text-orange"><i>Bathlako Temo Services</i></span>
+              <span className="self-center text-orange-500 text-xl font-semibold rounded-md dark:text-orange"><i>Batlhako Temo Services</i></span>
           </Link>
 
           <div id="mobile-nav" className="flex md:order-2">
