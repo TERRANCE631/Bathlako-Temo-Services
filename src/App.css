@@ -40,7 +40,7 @@
   }
   
   .fade-in {
-    animation: fadeIn 2.1s ease-in-out forwards;
+    animation: fadeIn 1.0s ease-in-out forwards;
   }
   
 
@@ -71,16 +71,6 @@
   };
 
   
-  /* Keyframes for fadeIn */
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 /* Keyframes for slideInUp */
 @keyframes slideInUp {
   0% {

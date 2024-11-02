@@ -4,7 +4,8 @@ import Solidaridad from "../Assets/Solidaridad.png";
 import ffe from "../Assets/ffe.jpeg"
 import Magalies from "../Assets/Magalies.svg";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { Loading } from "./Loading";
 
 export const ContactUs = ({title}) => {
     useEffect(() => {
@@ -15,12 +16,25 @@ export const ContactUs = ({title}) => {
         event.preventDefault();
         event.target.reset(); 
     };
+
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        // Simulate loading delay
+        const timer = setTimeout(() => setLoading(false), 2000); // 3 seconds
+        return () => clearTimeout(timer); // Cleanup the timer
+    }, []);
   
     return(
-        <main>
-            <div className="mt-[48px]">
-                <iframe width="100%" height="300" frameborder="0" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=-25.446779672433184,%2027.680528734085595+(BATLHAKO%20TEMO%20SERVICES)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps vehicle tracker</a></iframe>
+    <>
+        {loading ? (
+            <Loading />
+        ) : (
+            <div className="mt-[70px] mb-[-30px]">
+                <iframe loading="lazy" width="100%" height="350" frameborder="0" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=-25.446779672433184,%2027.680528734085595+(BATLHAKO%20TEMO%20SERVICES)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps vehicle tracker</a></iframe>
             </div>
+        )};
+        <main>
             <section>
                 <div className="flex flex-wrap justify-center pt-2 pb-2 border-blue-100 border-b-4 my-2">
                     <div className="py-2 mx-5 text-slide-right">
@@ -40,9 +54,9 @@ export const ContactUs = ({title}) => {
                 </div>
             </section>
 
-            <div>
-                <p className="text-center text-gray-700 dark:text-gray-300 font-semibold py-2">Don't get lost, just click on the <a className="underline text-blue-700" href="https://www.google.com/maps/dir//-25.4467797,27.6805287/@-25.4467797,27.6805287,5559m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI0MTAxNC4wIKXMDSoASAFQAw%3D%3D"
-                 target="_blank" rel="noreferrer"> co-ordinates</a> and click on your location</p>
+            <div className="px-5 mt-10">
+                <p className="text-center text-gray-700 dark:text-gray-300 font-semibold py-2">Don't get lost, just click on the <a className="underline text-blue-700 transform hover:scale-105 transition-transform duration-300" href="https://www.google.com/maps/dir//-25.4467797,27.6805287/@-25.4467797,27.6805287,5559m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI0MTAxNC4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank" rel="noreferrer"> co-ordinates</a> and click on your location</p>
             <form onSubmit={handleSubmit} class="max-w-md mx-auto mb-18 mt-10 shadow-3xl rounded-lg dark:bg-transparent">
                 <div class="relative z-0 w-full mb-5 group">
                     <input type="email" name="floating_email" id="floating_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
@@ -71,28 +85,30 @@ export const ContactUs = ({title}) => {
                     <button type="submit" class="bg-gradient-to-r from-orange-500 to-orange-400 text-white focus:outline-none font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
             </form>
             </div>
-            <div className="flex border-t-4 border-blue-100 mt-10 pt-4 justify-evenly flex-wrap items-center gap-4">
+            <div className="flex border-t-4 border-blue-100 mt-48 pt-4 justify-evenly flex-wrap items-center gap-4">
                 <div>
                     <a href="https://stargrow.co.za/" target="_blank" rel="noreferrer">
-                        <img className="w-[150px] sm:w-[200px] md:w-[250px] lg:w-[300px] xl:w-[230px] object-contain" src={starGrow} alt="" />
+                        <img className="w-[150px] sm:w-[200px] md:w-[200px] lg:w-[200px] xl:w-[230px] object-contain" src={starGrow} alt="" />
                     </a>
                 </div>
                 <div>
                     <a href="https://www.ffesa.co.za/" target="_blank" rel="noreferrer">
-                        <img className="w-[150px] sm:w-[200px] md:w-[250px] lg:w-[300px] xl:w-[230px] object-contain" src={ffe} alt="" />
+                        <img className="w-[150px] sm:w-[200px] md:w-[200px] lg:w-[200px] xl:w-[230px] object-contain" src={ffe} alt="" />
                     </a>
                 </div>
                 <div>
                     <a href="https://www.solidaridadnetwork.org/story/african-cooperative-thrives-as-a-citrus-producer/?fbclid=IwY2xjawFnshpleHRuA2FlbQIxMQABHTInLpbIOXEekHnJgK9CzBQioVYp1ig_jMrcodUi6AVtiZy1SxMer2zbkw_aem_d2iBD9B4MZuoXMMb6K_tLw" target="_blank" rel="noreferrer">
-                        <img className="w-[150px] sm:w-[200px] md:w-[250px] lg:w-[300px] xl:w-[230px] object-contain" src={Solidaridad} alt="" />
+                        <img className="w-[150px] sm:w-[200px] md:w-[200px] lg:w-[200px] xl:w-[230px] object-contain" src={Solidaridad} alt="" />
                     </a>
                 </div>
                 <div>
                     <a href="https://magaliescitrus.co.za/" target="_blank" rel="noreferrer">
-                        <img className="w-[150px] sm:w-[200px] md:w-[250px] lg:w-[300px] xl:w-[230px] object-contain" src={Magalies} alt="" />
+                        <img className="w-[150px] sm:w-[200px] md:w-[200px] lg:w-[200px] xl:w-[230px] object-contain" src={Magalies} alt="" />
                     </a>
                 </div>
             </div>
         </main>
+    </>
+
     )
 }
