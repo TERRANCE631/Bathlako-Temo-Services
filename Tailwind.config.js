@@ -1,5 +1,6 @@
 module.exports = {
-    content: ["./src/**/*.{html,js}"],
+    content:  ["./src/**/*.{js,jsx,ts,tsx}", // Adjust paths to match your project structure
+    "./public/index.html"],
     darkMode: 'class',
     theme: {
       extend: {
