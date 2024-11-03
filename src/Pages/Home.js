@@ -109,40 +109,40 @@ export const Home = ({title}) => {
                     <div className="container mx-auto px-4 py-4">
                         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
                             <div className="w-full h-48 sm:h-52 lg:h-30 transform hover:scale-105 transition-transform duration-300">
-                                <img src={img1} alt="Gallery Image 1" decoding="async" className="w-full h-full object-cover" />
+                                <img src={img1} alt="Gallery" decoding="async" className="w-full h-full object-cover" />
                             </div>
                             <div className="w-full h-48 sm:h-52 lg:h-30 transform hover:scale-105 transition-transform duration-300">
-                                <img src={img2} alt="Gallery Image 2" decoding="async" className="w-full h-full object-cover" />
+                                <img src={img2} alt="Gallery" decoding="async" className="w-full h-full object-cover" />
                             </div>
                             <div className="w-full h-48 sm:h-52 lg:h-30 transform hover:scale-105 transition-transform duration-300">
-                                <img src={img3} alt="Gallery Image 3" decoding="async" className="w-full h-full object-cover" />
+                                <img src={img3} alt="Gallery" decoding="async" className="w-full h-full object-cover" />
                             </div>
                             <div className="w-full h-48 sm:h-52 lg:h-30 transform hover:scale-105 transition-transform duration-300">
-                                <img src={img4} alt="Gallery Image 4" decoding="async" className="w-full h-full object-cover" />
+                                <img src={img4} alt="Gallery" decoding="async" className="w-full h-full object-cover" />
                             </div>
                             <div className="w-full h-48 sm:h-52 lg:h-30 transform hover:scale-105 transition-transform duration-300">
-                                <img src={img5} alt="Gallery Image 5" decoding="async" className="w-full h-full object-cover" />
+                                <img src={img5} alt="Gallery" decoding="async" className="w-full h-full object-cover" />
                             </div>
                             <div className="w-full h-48 sm:h-52 lg:h-30 transform hover:scale-105 transition-transform duration-300">
-                                <img src={img6} alt="Gallery Image 6" decoding="async" className="w-full h-full object-cover" />
+                                <img src={img6} alt="Gallery" decoding="async" className="w-full h-full object-cover" />
                             </div>
                             <div className="w-full h-48 sm:h-52 lg:h-30 transform hover:scale-105 transition-transform duration-300">
-                                <img src={img7} alt="Gallery Image 6" decoding="async" className="w-full h-full object-cover" />
+                                <img src={img7} alt="Gallery" decoding="async" className="w-full h-full object-cover" />
                             </div>
                             <div className="w-full h-48 sm:h-52 lg:h-30 transform hover:scale-105 transition-transform duration-300">
-                                <img src={img12} alt="Gallery Image 6" decoding="async" className="w-full h-full object-cover" />
+                                <img src={img12} alt="Gallery" decoding="async" className="w-full h-full object-cover" />
                             </div>
                             <div className="w-full h-48 sm:h-52 lg:h-30 transform hover:scale-105 transition-transform duration-300">
-                                <img src={img13} alt="Gallery Image 6" decoding="async" className="w-full h-full object-cover" />
+                                <img src={img13} alt="Gallery" decoding="async" className="w-full h-full object-cover" />
                             </div>
                             <div className="w-full h-48 sm:h-52 lg:h-30 transform hover:scale-105 transition-transform duration-300">
-                                <img src={welcome} alt="Gallery Image 6" decoding="async" className="w-full h-full object-cover" />
+                                <img src={welcome} alt="Gallery" decoding="async" className="w-full h-full object-cover" />
                             </div>
                             <div className="w-full h-48 sm:h-52 lg:h-30 transform hover:scale-105 transition-transform duration-300">
-                                <img src={packhouse} alt="Gallery Image 6" decoding="async" className="w-full h-full object-cover" />
+                                <img src={packhouse} alt="Gallery" decoding="async" className="w-full h-full object-cover" />
                             </div>
                             <div className="w-full h-48 sm:h-52 lg:h-30 transform hover:scale-105 transition-transform duration-300">
-                                <img src={packhouse2} alt="Gallery Image 6" decoding="async" className="w-full h-full object-cover" />
+                                <img src={packhouse2} alt="Gallery" decoding="async" className="w-full h-full object-cover" />
                             </div>
                         </div>
                     </div>
@@ -178,8 +178,8 @@ export const Home = ({title}) => {
                 </div>
             </section>
             <div className="flex border-t-4 mt-10 pt-4 justify-evenly flex-wrap items-center gap-4">
-                <div className="https://stargrow.co.za/" target="_blank" rel="noreferrer">
-                    <a href="">
+                <div>
+                    <a href="https://stargrow.co.za/" target="_blank" rel="noreferrer">
                         <img decoding="async" className="w-[150px] sm:w-[200px] md:w-[200px] lg:w-[200px] xl:w-[230px] object-contain" src={starGrow} alt="" />
                     </a>
                 </div>

@@ -259,8 +259,8 @@ export const AboutUs = ({title}) => {
             </div>
 
             <div className="flex border-t-4 mt-10 pt-4 justify-evenly flex-wrap items-center gap-4">
-                <div className="" target="_blank" rel="noreferrer">
-                    <a href="https://stargrow.co.za/">
+                <div>
+                    <a href="https://stargrow.co.za/" target="_blank" rel="noreferrer">
                         <img decoding="async" className="w-[150px] sm:w-[200px] md:w-[200px] lg:w-[200px] xl:w-[230px] object-contain" src={starGrow} alt="Collaboration" />
                     </a>
                 </div>
