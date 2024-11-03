@@ -1,7 +1,6 @@
 import './App.css';
 import { Header, Footer } from './Components/index';
 import { Allroutes } from './Routes/Allroutes';
-import './index.css';
 
 function App() {
   return (  
