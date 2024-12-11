@@ -1,4 +1,3 @@
-export { Home } from "./Home";
-export { ContactUs } from "./ContactUs";
-export { AboutUs } from "./AboutUs";
-export { PageNotFound } from "./PageNotFound";
+export { HomePageLoading } from "../Pages/Home/HomePageLoading";
+export { ContactUsLoading } from "../Pages/ContactUs/ContactUsLoading";
+export { AboutUsLoading } from "../Pages/About/AboutUsLoading";

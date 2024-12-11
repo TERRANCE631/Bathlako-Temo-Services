@@ -1,5 +1,5 @@
 // Loading.js
-export const Loading = () => {
+export function Loading() {
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-white dark:bg-gray-700 bg-opacity-100 z-50">
       <img

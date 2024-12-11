@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
+import { Collaboration } from "../Pages/Home/components/Collaboration";
 
 export const Footer = () => {
   return (
     <footer className="bg-white shadow dark:bg-gray-800 ">
+      <Collaboration/>
         <div className="w-full mx-auto max-w-screen-xl p-8 md:flex md:items-center md:justify-between">
             <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <Link to="" className="hover:underline hover:text-orange-500">Bathlako Temo Services™</Link>. All Rights Reserved. <spam className="text-orange-500"> | Tel: 073 870 5143</spam>
             </span>
