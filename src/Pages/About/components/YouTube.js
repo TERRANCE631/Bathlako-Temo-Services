@@ -9,10 +9,10 @@ export function YouTube() {
                 <div className="relative w-full pb-[56.25%] overflow-hidden shadow-lg">
                     <iframe
                         className="absolute top-0 left-0 w-full h-full border-0"
-                        src="https://www.youtube.com/embed/lio2-B2w19k?autoplay=1&mute=1"
+                        src="https://www.youtube-nocookie.com/embed/lio2-B2w19k?rel=0"
                         title="YouTube video player"
-                        decoding="async"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        loading="lazy"
+                        allow="clipboard-write; encrypted-media; picture-in-picture"
                         allowFullScreen>
                     </iframe>
                 </div> 
